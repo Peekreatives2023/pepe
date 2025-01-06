@@ -110,11 +110,11 @@ body{
    }
 
 .intro img {
-    width: 600px;  
+    width: 500px;  
     height: auto;
     color: transparent;
     border-radius: 50%;
-    margin-right: 70px;
+    margin-right: 40px;
     margin-top: 150px;
 }
 
