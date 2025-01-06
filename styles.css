@@ -285,7 +285,7 @@ footer {
     .navbar {
         flex-direction: column; /* Stack elements vertically */
         align-items: flex-start; /* Align items to the left */
-        padding: 30px;
+        padding: 35px;
     }
 
     .navbar img {
