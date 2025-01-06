@@ -274,80 +274,55 @@ footer {
     text-align: right; /* Ensures text aligns to the right */
 }
 
-
-
-
-/*#how-to-buy h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.step {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    text-align: left;
-}
-
-.step-number {
-    font-size: 2em;
-    font-weight: bold;
-    color: #4CAF50;
-    margin-right: 20px;
-}
-
-.step-content h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.step-content p {
-    font-size: 1em;
-    color: #666;
-}
-
-.step-content a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-.step-content a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design 
-@media (max-width: 768px) {
-    .step {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+/* General mobile styles */
+@media screen and (max-width: 768px) {
+    /* Hide social links */
+    .social-links {
+        display: none;
     }
 
-    .step-number {
-        margin-bottom: 10px;
-    }
-}*/
-
-        
-    
-    
-   
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column; /* Stack image and text vertically */
-        text-align: center; /* Center align content */
+    /* Adjust the navbar for mobile */
+    .navbar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px;
     }
 
-    .about img {
-        max-width: 90%; /* Adjust image size for smaller screens */
+    .navbar img {
+        margin-left: 0; /* Align logo to the left */
+        margin-top: 0;
     }
 
-    .about-text {
-        text-align: center; /* Center align text */
+    .links {
+        display: none; /* Initially hide the links */
+        flex-direction: column; /* Stack links vertically when visible */
+        gap: 20px;
+        width: 100%; /* Take full width */
+        background-color: #333; /* Optional: Add a background color */
+        padding: 10px;
+    }
+
+    .links ul {
+        flex-direction: column; /* Stack links vertically */
+        gap: 20px; /* Space between links */
+    }
+
+    .links a {
+        text-align: left; /* Align links to the left */
+        font-size: 20px; /* Adjust font size */
+    }
+
+    /* Hamburger menu button styles */
+    .hamburger {
+        display: block; /* Show hamburger menu button */
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+        margin-left: auto;
+    }
+
+    .navbar.open .links {
+        display: flex; /* Show links when the menu is open */
     }
 }
+
