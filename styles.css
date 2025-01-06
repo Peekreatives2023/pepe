@@ -1,0 +1,351 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #304921;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.navbar {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Push image to the left and links to the center */
+    padding: 10px 20px; /* Add padding around the navbar */
+}
+
+.navbar img {
+    max-height: 90px; /* Adjust the image size */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-right: auto; /* Push links to the center */
+}
+
+.links {
+    flex-grow: 1; /* Make links take up remaining space */
+    text-align: center; /* Center the links horizontally */
+}
+
+.links ul {
+    display: inline-flex; /* Horizontally align the links */
+    list-style: none; /* Remove bullet points */
+    gap: 80px; /* Space between links */
+    padding: 0;
+    margin: 0;
+}
+
+.links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color */
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+  
+}
+
+.intro-text {
+    max-width: 50%;
+    margin-bottom: 200px;
+    
+}
+
+.intro h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: white;
+    padding-left: 120px;
+    margin: 0;
+}
+
+.pepe {
+    font-size: 80px;
+    color: white;
+    font-weight: 800;
+    font-size: 200px;
+    text-shadow: 8px 10px 0 #000;
+    padding-left: 120px;
+    margin: 0;
+
+}
+
+.intro p {
+    font-size: 25px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: white;
+    padding-left: 120px
+}
+
+.intro .buttons {
+    display: flex; /* This ensures the buttons are placed side by side */
+    gap: 50px; /* Add spacing between the buttons */
+    margin-top: 40px; /* Add some space between the text and buttons */
+    padding-left: 120px;
+    border-radius: 20px;
+    color: white;
+}
+
+.intro a button {
+    background-color: #f79031;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px 45px;
+    box-shadow: 2px 5px #fff;
+    transition: background-color 0.3s ease;
+ 
+}
+
+.intro img {
+    width: 600px;  
+    height: auto;
+    color: transparent;
+    border-radius: 50%;
+    margin-right: 70px;
+    margin-top: 150px;
+}
+
+.about {
+    display: flex; /* Create a two-column layout */
+    align-items: center; /* Align content vertically */
+    gap: 20px; /* Add spacing between image and text */
+    padding: 20px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+
+.about img {
+    flex: 1; /* Image takes up one part of the space */
+    max-width: 100%; /* Ensure the image scales correctly */
+    margin-left: 150px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    
+}
+
+.about-text {
+    flex: 2; /* Text column takes more space */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    gap: 10px; /* Add spacing between the text elements */
+    margin-left: 170px;
+}
+
+.about h2, .about h3, .about p {
+    margin: 0; /* Remove default margins */
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 8px 10px 0 #000;
+    margin-bottom: 10px;
+}
+
+.about h3 {
+    font-size: 40px;
+    color: #fff; /* Optional: Slightly muted color for subheading */
+}
+
+.about p {
+    font-size: 30px;
+    color: white;
+    line-height: 1.6;
+}
+
+.texts{
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.how-to-buy {
+    margin-top: 30px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.how-to-buy h2 {
+    font-size: 70px;
+    color: white;
+    text-shadow: 6px 7px 0 #000;
+}
+
+.step1, .step2, .step3 {
+    background-color: #f79031;
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.step1 h2, .step2 h2, .step3 h2{
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    text-shadow: 1px 5px 5px black;
+}
+
+.step1 p, .step2 p, .step3 p{
+    color: white;
+    font-size: 28px ;
+    line-height: 35px;
+}
+
+.community {
+    text-align: center; /* Aligns the text to the center */
+    margin: 0 auto; /* Centers the section horizontally */
+    padding: 20px; /* Adds spacing inside the section */
+    max-width: 800px; /* Limits the width of the section for better readability */
+}
+
+.community h2 {
+    font-size: 58px; /* Adjusts the heading size */
+    color: white;
+    text-shadow: 6px 7px 0 #000;;
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.community p {
+    font-size: 28px; /* Adjusts the paragraph size */
+    color: white;
+    line-height: 1.6; /* Improves readability by increasing line height */
+    margin-bottom: 15px; /* Adds space between paragraphs */
+}
+
+.social-links {
+    text-align: center; /* Centers the logos horizontally */
+    padding: 80px; /* Adds spacing inside the section */
+}
+
+.social-links .logo {
+    background-color: #f79031; /* Adds yellow background to the logos */
+    padding: 10px; /* Adds padding around the logos */
+    border-radius: 10px; /* Makes the corners of the background slightly rounded */
+    margin: 0 20px; /* Adds spacing between the logos */
+    display: inline-block; /* Ensures the background wraps properly around each logo */
+    width: 90px; /* Adjusts the size of the logos */
+    height: 60px; /* Maintains aspect ratio */
+    box-shadow: 2px 5px #fff;
+}
+
+
+footer {
+    background-color: #f79031; 
+    padding: 20px 20px; /* Adds spacing around the footer */
+    margin-top: 100px;
+    font-family: Arial, sans-serif; /* Sets a clean font */
+    font-size: 14px; /* Adjusts font size */
+    color: #fff; /* Text color */
+}
+
+.footer-content {
+    display: flex; /* Enables flexbox for layout */
+    justify-content: space-between; /* Distributes items with space between them */
+    align-items: center; /* Aligns text vertically */
+}
+
+.left-text {
+    margin: 0; /* Removes default margins */
+}
+
+.right-text {
+    margin: 0; /* Removes default margins */
+    text-align: right; /* Ensures text aligns to the right */
+}
+
+
+
+
+/*#how-to-buy h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.step-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-right: 20px;
+}
+
+.step-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.step-content p {
+    font-size: 1em;
+    color: #666;
+}
+
+.step-content a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.step-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design 
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step-number {
+        margin-bottom: 10px;
+    }
+}*/
+
+        
+    
+    
+   
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center align content */
+    }
+
+    .about img {
+        max-width: 90%; /* Adjust image size for smaller screens */
+    }
+
+    .about-text {
+        text-align: center; /* Center align text */
+    }
+}
