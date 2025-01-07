@@ -121,7 +121,7 @@ body{
 .about {
     display: flex; /* Create a two-column layout */
     align-items: center; /* Align content vertically */
-    gap: 20px; /* Add spacing between image and text */
+    gap: 10px; /* Add spacing between image and text */
     padding: 20px;
     margin-top: 120px;
     margin-bottom: 40px;
@@ -131,7 +131,7 @@ body{
 .about img {
     flex: 1; /* Image takes up one part of the space */
     max-width: 100%; /* Ensure the image scales correctly */
-    margin-left: 150px;
+    margin-left: 80px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: Rounded corners */
     
@@ -150,9 +150,8 @@ body{
 }
 
 .about h2 {
-    font-size: 2rem;
     color: white;
-    font-size: 42px;
+    font-size: 2px;
     font-weight: bold;
     text-shadow: 8px 10px 0 #000;
     margin-bottom: 10px;
