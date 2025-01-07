@@ -121,7 +121,7 @@ body{
 .about {
     display: flex; /* Create a two-column layout */
     align-items: center; /* Align content vertically */
-    gap: 10px; /* Add spacing between image and text */
+    gap: 5px; /* Add spacing between image and text */
     padding: 20px;
     margin-top: 120px;
     margin-bottom: 40px;
