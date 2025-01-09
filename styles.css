@@ -1,92 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #304921;
-    font-family: montserrat;
+     background-color: #304921;
 }
-
-.navbar {
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.navbar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-top: 3rem;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+header > nav > ul{
     display: flex;
-    align-items: center; /* Vertically align items */
-    justify-content: space-between; /* Push image to the left and links to the center */
-    padding: 10px 20px; /* Add padding around the navbar */
+    align-items: center;
+    gap: 80px;
 }
-
-.navbar img {
-    max-height: 90px; /* Adjust the image size */
-    width: auto; /* Maintain aspect ratio */
-    border-radius: 50%;
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-right: auto; /* Push links to the center */
+header > section{
+    display: flex;
+    gap: 80px;
+    align-items: center;
 }
-
-.links {
-    flex-grow: 1; /* Make links take up remaining space */
-    text-align: center; /* Center the links horizontally */
+header > section > a{
+    background-color: #f79031;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 30px;
+    box-shadow: 2px 5px #fff;
+    transition: background-color 0.3s ease;
 }
-
-.links ul {
-    display: inline-flex; /* Horizontally align the links */
-    list-style: none; /* Remove bullet points */
-    gap: 80px; /* Space between links */
-    padding: 0;
-    margin: 0;
-}
-
-.links a {
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Set link color */
-    margin-top: 120px;
-    font-weight: bold;
-    font-size: 30px;
+.navbar > img{
+    width: 8%;
+    border-radius: 5rem;
 }
 
 .intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -40px;
+    margin-top: 3rem;
+  
   
 }
-
-.intro-text {
-    max-width: 50%;
-    margin-bottom: 200px;
-    
-}
-
 .intro h1 {
-    font-size: 60px;
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 8px;
     color: white;
-    padding-left: 120px;
-    margin: 0;
+    
+   
 }
 
 .pepe {
-    font-size: 130px;
+    font-size: 5rem;
     color: white;
     font-weight: 800;
     text-shadow: 8px 10px 0 #000;
-    padding-left: 120px;
-    margin: 0;
 }
 
 .intro p {
-    font-size: 25px;
-    line-height: 1.6;
+    font-size: 1.6rem;
     margin-top: 20px;
     color: white;
-    padding-left: 120px
 }
-
 .intro .buttons {
-    display: flex; /* This ensures the buttons are placed side by side */
-    gap: 50px; /* Add spacing between the buttons */
-    margin-top: 40px; /* Add some space between the text and buttons */
-    padding-left: 120px;
+    display: flex;
+    gap: 50px; 
+    margin-top: 40px; 
     border-radius: 20px;
     color: white;
 }
@@ -95,8 +92,8 @@ body{
     background-color: #f79031;
     color: #fff;
     border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 25px;
+    /* padding: 0.8rem 1.5rem; */
+    font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -104,80 +101,54 @@ body{
     box-shadow: 2px 5px #fff;
     transition: background-color 0.3s ease;
 }
-
 .intro a button:hover{
     background-color: rgb(16, 212, 16);
    }
 
-.intro img {
+   .intro img {
     width: 500px;  
     height: auto;
     color: transparent;
     border-radius: 50%;
-    margin-right: 40px;
-    margin-top: 130px;
 }
+
 
 .about {
-    display: flex; /* Create a two-column layout */
-    align-items: center; /* Align content vertically */
-    gap: 5px; /* Add spacing between image and text */
-    padding: 20px;
-    margin-top: 120px;
-    margin-bottom: 40px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 
 
-.about img {
-    flex: 1; /* Image takes up one part of the space */
-    max-width: 100%; /* Ensure the image scales correctly */
-    margin-left: 80px;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Rounded corners */
-    
-}
 
-.about-text {
-    flex: 2; /* Text column takes more space */
-    display: flex;
-    flex-direction: column; /* Stack text vertically */
-    gap: 10px; /* Add spacing between the text elements */
-    margin-left: 170px;
-}
-
-.about h2, .about h3, .about p {
-    margin: 0; /* Remove default margins */
-}
 
 .about h2 {
     color: white;
-    font-size: 2px;
+    font-size: 1.8rem;
     font-weight: bold;
-    text-shadow: 8px 10px 0 #000;
     margin-bottom: 10px;
 }
 
 .about h3 {
-    font-size: 30px;
+    font-size: 1.2rem;
+    padding: 20px 0px;
     color: #fff; /* Optional: Slightly muted color for subheading */
 }
 
 .about p {
-    font-size: 25px;
+    font-size: 1rem;
     color: white;
     line-height: 1.6;
 }
 
 .texts{
-    display: flex;
-    justify-content: center; /* Horizontally centers the content */
     color: white;
-    font-size:24px;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     line-height: 1.6;
-    padding-left: 120px;
-    padding-right: 120px;
+    margin-bottom: 60px;
 }
+
 
 .how-to-buy {
     margin-top: 30px;
@@ -186,144 +157,166 @@ body{
 }
 
 .how-to-buy h2 {
+    /* margin-top: 20px; */
     font-size: 70px;
     color: white;
     text-shadow: 6px 7px 0 #000;
 }
-
+.steps{
+    display: flex;
+    gap: 40px;
+}
 .step1, .step2, .step3 {
     background-color: #f79031;
     width: 400px;
     margin: 100px auto;
-    padding: 40px;
+    padding: 20px;
     border-radius: 50px;
     box-shadow: 10px 10px 20px black;
 }
 
 .step1 h2, .step2 h2, .step3 h2{
     color: white;
-    font-size: 34px;
+    font-size: 24px;
     font-weight: bold;
     text-shadow: 1px 5px 5px black;
 }
 
 .step1 p, .step2 p, .step3 p{
     color: white;
-    font-size: 25px ;
+    font-size: 16px ;
     line-height: 38px;
 }
 
 .community {
-    text-align: center; /* Aligns the text to the center */
-    margin: 0 auto; /* Centers the section horizontally */
-    padding: 20px; /* Adds spacing inside the section */
-    max-width: 800px; /* Limits the width of the section for better readability */
+    text-align: center; 
+    margin-bottom: 2rem;
+
+
 }
 
 .community h2 {
-    font-size: 58px; /* Adjusts the heading size */
+    font-size: 3.5rem;
     color: white;
     text-shadow: 6px 7px 0 #000;;
-    margin-bottom: 10px; /* Adds space below the heading */
+    margin-bottom: 10px; /
 }
 
 .community p {
-    font-size: 25px; /* Adjusts the paragraph size */
+    font-size: 1.5rem; 
     color: white;
-    line-height: 1.7; /* Improves readability by increasing line height */
-    margin-bottom: 15px; /* Adds space between paragraphs */
+    line-height: 1.7; 
+    margin-bottom: 15px; /
 }
 
-.social-links {
-    text-align: center; /* Centers the logos horizontally */
-    padding: 80px; /* Adds spacing inside the section */
-}
+.social-links{
+    display: flex;
+    /* justify-content: space-betwe; */
+    gap: 40px;
+    margin-top: 20px;
 
-.social-links .logo {
-    background-color: #f79031; /* Adds yellow background to the logos */
-    padding: 10px; /* Adds padding around the logos */
-    border-radius: 10px; /* Makes the corners of the background slightly rounded */
-    margin: 0 20px; /* Adds spacing between the logos */
-    display: inline-block; /* Ensures the background wraps properly around each logo */
-    width: 90px; /* Adjusts the size of the logos */
-    height: 60px; /* Maintains aspect ratio */
+}
+.social-links a{
+    background-color: #f79031;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
     box-shadow: 2px 5px #fff;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+
+}
+.footer-content{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
 }
 
-
-footer {
-    background-color: #f79031; 
-    padding: 20px 20px; /* Adds spacing around the footer */
-    margin-top: 100px;
-    font-family: Arial, sans-serif; /* Sets a clean font */
-    font-size: 14px; /* Adjusts font size */
-    color: #fff; /* Text color */
-}
-
-.footer-content {
-    display: flex; /* Enables flexbox for layout */
-    justify-content: space-between; /* Distributes items with space between them */
-    align-items: center; /* Aligns text vertically */
-}
-
-.left-text {
-    margin: 0; /* Removes default margins */
-}
-
-.right-text {
-    margin: 0; /* Removes default margins */
-    text-align: right; /* Ensures text aligns to the right */
-}
-
-/* General mobile styles */
-@media screen and (max-width: 768px) {
-    /* Hide social links */
-    .social-links {
-        display: none;
+@media screen and (max-width: 1000px) {
+    main{
+        padding: 20px 40px;
+        text-align: center;
     }
-
-    /* Adjust the navbar for mobile */
-    .navbar {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to the left */
-        padding: 35px;
+    .navbar img{
+        width: 30%;
     }
-
-    .navbar img {
-        margin-left: 0; /* Align logo to the left */
-        margin-top: 0;
-    }
-
-    .links {
-        display: none; /* Initially hide the links */
-        flex-direction: column; /* Stack links vertically when visible */
+    .links > ul{
+        display: flex;
+        flex-direction: row;
         gap: 20px;
-        width: 100%; /* Take full width */
-        background-color: #333; /* Optional: Add a background color */
-        padding: 10px;
+        width: 15rem;
+        justify-content: end;
+        border-style: 3px solid blue;
     }
-
-    .links ul {
-        flex-direction: column; /* Stack links vertically */
-        gap: 20px; /* Space between links */
+    header > section{
+        visibility: hidden;
     }
-
-    .links a {
-        text-align: left; /* Align links to the left */
-        font-size: 20px; /* Adjust font size */
+   .intro .buttons{
+        flex-direction: column;
+        gap: 20px;
     }
-
-    /* Hamburger menu button styles */
-    .hamburger {
-        display: block; /* Show hamburger menu button */
-        cursor: pointer;
-        font-size: 30px;
-        color: white;
-        margin-left: auto;
+    .intro a button{
+        width: 100%;
     }
-
-    .navbar.open .links {
-        display: flex; /* Show links when the menu is open */
+    .texts{
+        margin-top: 5rem;
+    }
+    header > nav > ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    header > section{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .intro img{
+        width: 300px;
+    }
+    .about{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .how-to-buy{
+       padding: 30px 10px;
+    }
+    .how-to-buy h2{
+        font-size: 40px;
+        margin-bottom: 4rem;
+    }
+    .steps{
+        flex-direction: column;
+        /* gap: 2px; */
+    }
+    .step1, .step2, .step3{
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .community{
+        margin-bottom: 80px;
+    }
+    .community > p:last-child{
+        margin-top: 50px;
+    }
+    .community h2{
+        font-size: 2rem;
+        margin-top: 80px;
+    }
+    .social-links{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social-links a{
+        padding: 10px 20px;
+    }
+    .footer-content{
+        flex-direction: column;
+        gap: 20px;
     }
 }
-
