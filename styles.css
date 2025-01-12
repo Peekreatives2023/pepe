@@ -211,8 +211,8 @@ header > section > a{
 
 .social-links{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content: space-between;*/
+    align-content: center;
     gap: 40px;
     margin-top: 20px;
 
